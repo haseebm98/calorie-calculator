@@ -1,0 +1,186 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    background-color: #ffffff9f;
+    padding: 20px;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+#info {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-div {
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: left;
+}
+
+input[type="number"],
+input[type="radio"] {
+    margin-right: 15px;
+    margin-bottom: 0px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    margin-right: 15px;
+    margin-bottom: 0px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    display: block;
+    background-color: #21ad50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.submitBtn:hover {
+    background-color: #008f30;
+    transition: 0.5s;
+}
+
+.output {
+    background-color: #51d3717c;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#caloriesBurnedOutput {
+    background-color: rgba(255, 210, 88, 0.493);
+}
+
+#activity {
+    display: none;
+    width: 95%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+#activity h1 {
+    font-size: 20px;
+}
+
+#tableInfo {
+    height: auto;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin: 0 10px;
+}
+
+table {
+    text-align: center;
+}
+
+.header {
+    background-color: rgb(126, 187, 159);
+    padding: 5px;
+    font-weight: bold;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.leftColumn {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#calorieChartContainer {
+    height: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin: 0 10px;
+}
+
+.color1 {
+    background-color: rgba(235, 120, 54, 0.4);
+}
+
+.color2 {
+    background-color: rgba(235, 90, 54, 0.2);
+}
+
+.color3 {
+    background-color: rgba(255, 159, 64, 0.2);
+}
+
+.color4 {
+    background-color: rgba(132, 192, 75, 0.2);
+}
+
+.color5 {
+    background-color: rgba(89, 192, 75, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    .container {
+        height: 90%;
+        width: 70%;
+    }
+    #activity {
+        flex-direction: column;
+        width: 100%;
+    }
+    #tableInfo {
+        width: 60%;
+    }
+}

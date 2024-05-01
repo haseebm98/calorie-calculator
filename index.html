@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <form id="bmrForm">
+        <div class="container" id="info">
+            <h1>BMR Calculator</h1>
+            <div class="info-div" id="gender">
+                <h2>Gender:</h2>
+                <label for="male">Male: </label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="female">Female: </label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+            </div>
+
+            <div class="info-div" id="age">
+                <h2>Age:</h2>
+                <label for="ageInput"></label>
+                <input type="number" min="1" max="100" id="ageInput" name="age" required>
+            </div>
+
+            <div class="info-div" id="height">
+                <h2>Height:</h2>
+                <label for="ft">ft: </label>
+                <input type="number" min="1" max="8" id="ft" name="heightFeet" placeholder="0" required>
+                <label for="in">in: </label>
+                <input type="number" min="0" max="11" id="in" name="heightInches" placeholder="0" required>
+            </div>
+
+            <div class="info-div" id="weight">
+                <h2>Weight:</h2>
+                <label for="lb">lbs: </label>
+                <input type="number" min="1" max="500" id="lb" name="weight" placeholder="0" required>
+            </div>
+
+            <div class="info-div">
+                <label for="workoutDuration"><h2>Workout Duration (minutes): </h2></label>
+                <input type="number" id="workoutDuration" name="workoutDuration" min="0" placeholder="0">
+            </div>
+
+            <div class="info-div">
+                <label for="intensity"><h2>Intensity:</h2></label>
+                <select id="intensity" name="intensity">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submitBtn">Calculate BMR</button>
+        </div>
+    </form>
+
+    <div class="container" id="activity">
+
+            <div class="container" id="tableInfo">
+                
+                <h1>Information</h1>
+                <div id="bmrOutput" class="output"></div>
+                <div id="caloriesBurnedOutput" class="output"></div>
+    
+                <table>
+                    <tr>
+                        <td class="header">Goal</td>
+                        <td class="header">Rest calorie intake/day</td>
+                        <td class="header">Workout calorie intake/day</td>
+                    </tr>
+                    <tr>
+                        <td class="leftColumn">Moderate Weight Loss</td>
+                        <td id="mwLossRest" class="leftColumn color1"></td>
+                        <td id="mwLossWorkout" class="color1"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftColumn">Slow Weight Loss</td>
+                        <td id="swLossRest" class="leftColumn color2"></td>
+                        <td id="swLossWorkout" class="color2"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftColumn">Maintenance</td>
+                        <td id="maintenanceRest" class="leftColumn color3"></td>
+                        <td id="maintenanceWorkout" class="color3"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftColumn">Slow weight gain</td>
+                        <td id="swGainRest" class="leftColumn color4"></td>
+                        <td id="swGainWorkout" class="color4"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftColumn">Moderate weight gain</td>
+                        <td id="mwGainRest" class="leftColumn color5"></td>
+                        <td id="mwGainWorkout" class="color5"></td>
+                    </tr>
+                </table>
+
+            </div>
+    
+            <div class="container" id="calorieChartContainer">
+                <h1>Caloric Intake Guide</h1>
+                <canvas id="calorieChart"></canvas>
+            </div>
+
+        
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>
