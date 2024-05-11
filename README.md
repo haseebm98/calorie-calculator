@@ -1,36 +1,53 @@
 # Calorie Calculator
 
-Overview:
-The Calorie Intake Calculator is a web-based application designed to help users determine their daily calorie needs based on several personal attributes and activity levels. This project uses HTML, CSS, and JavaScript (with Graph.js) to create a user-friendly interface where users can input their age, gender, height, weight, duration of workouts, and workout intensity. The calculator then processes this information to provide a customized daily calorie intake recommendation. Using Graph.js, the information is aesthetically presented in a bar chart that enables users to understand their caloric needs in an easier way.
+Description:
+
+The Calorie Calculator App helps users determine their Basal Metabolic Rate (BMR) and calculate the calories burned during various activities. This application allows users to input personal data such as gender, age, height, and weight, and it provides recommendations for daily caloric intake based on different fitness goals.
 
 Features:
-- Personalized Inputs: Users can enter specific details about their age, gender, height, and weight.
-- Activity-Based Calculations: The calculator takes into account the duration and intensity of the user's workouts to provide a more accurate calorie intake suggestion.
-- Responsive Design: Ensures that the calculator is usable on both desktop and mobile devices.
-- Real-Time Calculation: Calculates calorie needs dynamically without the need to reload the page.
-- Tabulated and Graphical Representation: A table and a graph display to help visualise your caloric intake better.
+- Calculation of Basal Metabolic Rate (BMR) based on personal data.
+- Estimation of calories burned based on exercise duration and intensity.
+- Recommendations for daily caloric intake to meet different goals (e.g., weight loss, maintenance, weight gain).
+- Interactive bar chart displaying caloric intake goals.
+- Responsive web design that works on desktops and mobile devices.
 
-How to Use:
-To use the Calorie Intake Calculator, follow these simple steps:
-
-- Open the Calculator: Load the web page on any compatible web browser.
-- Enter Your Details: Fill in the fields for age, gender, height, and weight.
-- Add Workout Details: Input the average duration and intensity of your regular workouts.
-- Calculate: Press the calculate button to receive your daily recommended calorie intake instantly.
-- Analyse: Read the table, and view the graph to understand your dietary needs better.
+Tech Stack:
+- HTML5: Structures the content of the application.
+- CSS3: Styles the application, ensuring a responsive and user-friendly interface.
+- JavaScript: Manages the application's interactivity, calculations, and dynamic content updates.
+- Chart.js: Used for creating interactive graphical representations (charts) of data.
+- FontAwesome: Provides icons used throughout the application.
 
 Installation:
-To run the Calorie Intake Calculator locally, you will need to clone the repository and open the HTML file in a browser.
-
-- Clone the repository
-git clone https://github.com/haseebm98/calorie-calculator.git
-- Navigate to the project directory:
-cd calorie-calculator
-- Open index.html file in your web browser.
+1. Prerequisites
+- A modern web browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.
+- Internet access to load external libraries used in the project.
+2. Setup
+- Download the project files from the repository or clone the repository using Git.
+- Extract the files to a desired location on your local machine.
+- Open the index.html file in your web browser to launch the application.
+3. Usage
+- Navigate to the index.html file in your web browser to start the application.
+- Fill in the form with your gender, age, height, weight, workout duration, and intensity.
+- Click the "Calculate BMR" button to display your BMR, calories burned during workouts, and recommended caloric intake for various goals.
+- The results, including graphical representations, will be displayed on the screen.
 
 Contributing:
-Contributions to the Calorie Intake Calculator are welcome. Here are a few ways you can help improve the project:
+Contributors are welcome to improve the app. Please follow these steps:
+- Fork the repository.
+- Create a new branch for your features (git checkout -b new-feature).
+- Commit your changes (git commit -am 'Add some feature').
+- Push to the branch (git push origin new-feature).
+- Submit a pull request.
 
-- Reporting Bugs: If you find a bug, please open an issue describing the problem.
-- Suggesting Enhancements: Have an idea to make this calculator better? Please open an issue to suggest your feature.
-- Pull Requests: Feel free to fork the repository and submit pull requests with your improvements.
+License:
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact:
+Haseeb Mirza - h.mirza98@hotmail.com
+
+Acknowledgements:
+- Chart.js for data visualization tools.
+- FontAwesome for providing web icons.
+
+© Haseeb Mirza - 2024
